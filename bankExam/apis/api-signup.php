@@ -68,9 +68,9 @@ $jAccount = new stdClass();
 $jAccount->balance = 0;
 $sAccountId = uniqid();
 $jClient->accounts->$sAccountId = $jAccount;
-$jCLient->transactionsNotRead = new stdClass();
-$jClient->transactions = new stdClass();
-$InnerData->$sPhone = $jClient;
+// $jCLient->transactionsNotRead = new stdClass();
+// $jClient->transactions = new stdClass();
+// $InnerData->$sPhone = $jClient;
 
 
 
