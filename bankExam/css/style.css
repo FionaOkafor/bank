@@ -1,0 +1,60 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+body {
+    
+    background-color: rgba(0,0,0,0.1);
+}
+  
+input.invalid {
+      border: 1px solid red;
+  }
+
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 75px;
+    font-size: 22px;
+    padding: 0px 15% 0px 15%;
+    background-color: #03132C;
+  
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+nav a {
+      color:#829CCE;
+      text-decoration: none;
+}
+nav div.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav>div {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+
+}
+
+nav div:first-child {
+    justify-content: left;
+}
+
+nav div:last-child {
+    justify-content: right;
+}
+
+div.page {
+      position: absolute;
+      top: 75px;
+      left: 0;
+      padding: 20px 15%;
+  }
