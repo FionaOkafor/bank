@@ -47,6 +47,7 @@ if( $sPassword != $sConfirmPassword){sendResponse(0,__LINE__,"confirmation passw
 
 $sData = file_get_contents('../data/clients.json');
 $jData = json_decode($sData);
+echo $jData;
 if($jData == null){sendResponse(0,__LINE__, "invalid json");}
 $InnerData = $jData->data;
 

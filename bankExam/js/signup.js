@@ -5,7 +5,7 @@ $('#frmSignup').submit(function (e) {
     method: "POST",
     url: "../apis/api-signup.php",
     data: $('#frmSignup').serialize(),
-    dataType: "json"
+    dataType: "text"
   }).
     done(function (jData) {
       console.log(jData)
