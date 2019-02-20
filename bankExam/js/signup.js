@@ -7,10 +7,9 @@ $('#frmSignup').submit(function (e) {
     data: $('#frmSignup').serialize(),
     dataType: "text"
   }).
-    done(function (jData) {
-      console.log(jData)
-      if (jData.status == 1) {
-        console.log('done', jData)
+    done(function (data, msg, res) {
+      if (res.status === 200) {
+        console.log('done', data)
       } else {
         console.log('api not working')
       }
