@@ -47,6 +47,7 @@ if( $sPassword != $sConfirmPassword){sendResponse(0,__LINE__,"confirmation passw
 
 $sData = file_get_contents('../data/clients.json');
 $jData = json_decode($sData);
+echo $jData;
 if($jData == null){sendResponse(0,__LINE__, "invalid json");}
 $InnerData = $jData->data;
 
@@ -68,9 +69,9 @@ $jAccount = new stdClass();
 $jAccount->balance = 0;
 $sAccountId = uniqid();
 $jClient->accounts->$sAccountId = $jAccount;
-$jCLient->transactionsNotRead = new stdClass();
-$jClient->transactions = new stdClass();
-$InnerData->$sPhone = $jClient;
+// $jCLient->transactionsNotRead = new stdClass();
+// $jClient->transactions = new stdClass();
+// $InnerData->$sPhone = $jClient;
 
 
 
